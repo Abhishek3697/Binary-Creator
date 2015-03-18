@@ -2,8 +2,9 @@
 #include<stdlib.h>
 #include<io.h>
 
-void bina(int num, char c);
-void main()
+void bina(int num, char c); //prototype of bina() function
+
+void main() //Main function of progrmmae
 {
     int bin[8];
     int num,test;
@@ -28,7 +29,7 @@ void main()
     fclose(f);
 }
 
-void bina(int num,char c)
+void bina(int num,char c) //Function to generate binary equivalent
 {
     FILE *f;
     int bin[8];
@@ -57,7 +58,7 @@ void bina(int num,char c)
     fclose(f);
 }
 
-int paritycheck(int bin[])
+int paritycheck(int bin[]) //Function to check even parity
 {
     int ret = 0, i;
     for(i = 1; i < 8; i++)
